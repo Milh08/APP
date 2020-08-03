@@ -66,23 +66,9 @@ public class E_Mostrar_Resultados extends AppCompatActivity {
 
         Cambiar_Tema();
         Croma_Img.setImageBitmap(D_Generar_Muestra.bitmap);
-        Subir_Imagen_Al_Servidor();
         Caracteristicas_Presentes();
 
         Grafica();
-        //g2();
-    }
-    public void g2(){
-        List<SliceValue> pieData = new ArrayList<>();
-        pieData.add(new SliceValue(50, Color.parseColor("#121212")).setLabel("valor 1"));
-        pieData.add(new SliceValue(50, Color.parseColor("#00F260")).setLabel("Valor 2"));
-
-        PieChartData pieChartData = new PieChartData(pieData);
-        pieChartData.setHasLabels(true);
-        pieChartData.setHasCenterCircle(true).setCenterText1("Croma").setCenterText1FontSize(15).setCenterText1Color
-                (getResources().getColor(R.color.TextoTema));
-        G.setPieChartData(pieChartData);
-        G.animate();
     }
     public void Grafica(){
         int [] x = Colores();
@@ -168,10 +154,7 @@ public class E_Mostrar_Resultados extends AppCompatActivity {
             D_Generar_Muestra.LM.getCromann().get(0).setIndProN(true);
         }
 
-        Actualizar_Muestra(
-                D_Generar_Muestra.LM.getCromann().get(0).getId(),
-                D_Generar_Muestra.LM.getCromann().get(0)
-        );
+        Subir_Imagen_Al_Servidor();
     }
     public void Actualizar_Muestra(int id, Cromann cromann){
         Call<Carga_De_Datos_IA> call = ClienteRetrofit.getInstance().getApi()
@@ -227,8 +210,11 @@ public class E_Mostrar_Resultados extends AppCompatActivity {
                     ).show();
                     return;
                 }
-                System.out.println("RESPU " + response.body().getPath());
                 D_Generar_Muestra.LM.getCromann().get(0).setImg(response.body().getPath());
+                Actualizar_Muestra(
+                        D_Generar_Muestra.LM.getCromann().get(0).getId(),
+                        D_Generar_Muestra.LM.getCromann().get(0)
+                );
             }
 
             @Override
