@@ -90,9 +90,9 @@ public interface API {
     // Nueva funciones para subir imagen
     @Multipart
     @POST("img/")
-    Call<ResponseBody> Subir_Img(
+    Call<IMG> Subir_Img(
             @Part MultipartBody.Part file,
-            @Field("data") String id
+            @Part("data") String id
     );
 
     @FormUrlEncoded

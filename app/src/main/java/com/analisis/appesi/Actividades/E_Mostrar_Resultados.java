@@ -14,6 +14,7 @@ import com.analisis.appesi.API.ClienteRetrofit;
 import com.analisis.appesi.Modelo.Caractere;
 import com.analisis.appesi.Modelo.Carga_De_Datos_IA;
 import com.analisis.appesi.Modelo.Cromann;
+import com.analisis.appesi.Modelo.IMG;
 import com.analisis.appesi.R;
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.data.PieData;
@@ -210,14 +211,14 @@ public class E_Mostrar_Resultados extends AppCompatActivity {
                 D_Generar_Muestra.photoFile.getName(),
                 filep
         );
-        Call<ResponseBody> call = ClienteRetrofit.getInstance3().getApi()
+        Call<IMG> call = ClienteRetrofit.getInstance3().getApi()
                 .Subir_Img(
                         file,
                         D_Generar_Muestra.LM.getCromann().get(0).getId() + ""
                 );
-        call.enqueue(new Callback<ResponseBody>() {
+        call.enqueue(new Callback<IMG>() {
             @Override
-            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+            public void onResponse(Call<IMG> call, Response<IMG> response) {
                 if (!response.isSuccessful()){
                     Toast.makeText(
                             E_Mostrar_Resultados.this,
@@ -226,11 +227,12 @@ public class E_Mostrar_Resultados extends AppCompatActivity {
                     ).show();
                     return;
                 }
-                System.out.println("RESPUESTA " + response.body().toString());
+                System.out.println("RESPU " + response.body().getPath());
+                D_Generar_Muestra.LM.getCromann().get(0).setImg(response.body().getPath());
             }
 
             @Override
-            public void onFailure(Call<ResponseBody> call, Throwable t) {
+            public void onFailure(Call<IMG> call, Throwable t) {
 
             }
         });

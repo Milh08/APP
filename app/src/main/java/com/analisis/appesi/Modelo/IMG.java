@@ -4,15 +4,15 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class IMG {
-    @SerializedName("img")
+    @SerializedName("path")
     @Expose
-    String img;
+    String path;
 
-    public String getImg() {
-        return img;
+    public String getPath() {
+        return path;
     }
 
-    public void setImg(String img) {
-        this.img = img;
+    public void setPath(String path) {
+        this.path = path;
     }
 }

@@ -45,7 +45,7 @@ public class Cromann {
     Boolean eliminado;
     @SerializedName("img")
     @Expose
-    Object img;
+    String img;
     @SerializedName("created_at")
     @Expose
     String createdAt;
@@ -157,11 +157,11 @@ public class Cromann {
         this.eliminado = eliminado;
     }
 
-    public Object getImg() {
+    public String getImg() {
         return img;
     }
 
-    public void setImg(Object img) {
+    public void setImg(String img) {
         this.img = img;
     }
 
