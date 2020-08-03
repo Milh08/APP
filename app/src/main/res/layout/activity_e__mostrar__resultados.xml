@@ -159,14 +159,6 @@
                             android:layout_weight="1"
                             android:layout_marginTop="10dp" />
                     </TableRow>
-                    <TableRow>
-                        <lecho.lib.hellocharts.view.PieChartView
-                            android:id="@+id/chart"
-                            android:layout_width="0dp"
-                            android:layout_height="300dp"
-                            android:layout_weight="1"
-                            android:layout_marginTop="10dp"/>
-                    </TableRow>
                 </TableLayout>
             </androidx.core.widget.NestedScrollView>
     </LinearLayout>

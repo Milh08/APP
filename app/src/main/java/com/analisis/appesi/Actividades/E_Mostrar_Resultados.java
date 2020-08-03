@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.SharedPreferences;
-import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -26,13 +25,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import lecho.lib.hellocharts.model.PieChartData;
-import lecho.lib.hellocharts.model.SliceValue;
-import lecho.lib.hellocharts.view.PieChartView;
 import okhttp3.MediaType;
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
-import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -44,7 +39,6 @@ public class E_Mostrar_Resultados extends AppCompatActivity {
     TextView Oxigeno, Mat_Organica, Minerales, Nitrogeno, Rompimiento, Mat_Viva,
     Act_Biologica, Nitro_Organico;
     PieChart GRAFICA;
-    PieChartView G;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,7 +57,6 @@ public class E_Mostrar_Resultados extends AppCompatActivity {
         Act_Biologica  = findViewById(R.id.Act_Biologica);
         Nitro_Organico = findViewById(R.id.Nitro_Organico);
         GRAFICA        = findViewById(R.id.GRAFICA);
-        G              = findViewById(R.id.chart);
 
         Cambiar_Tema();
         Croma_Img.setImageBitmap(D_Generar_Muestra.bitmap);
@@ -223,34 +216,7 @@ public class E_Mostrar_Resultados extends AppCompatActivity {
 
             }
         });
-        /*Call<ResponseBody> call = ClienteRetrofit.getInstance().getApi()
-                .cargar_Imagen(
-                        D_Generar_Muestra.LM.getCromann().get(0).getId(),
-                        file
-                );
-        call.enqueue(new Callback<ResponseBody>() {
-            @Override
-            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-                if (!response.isSuccessful()){
-                    Toast.makeText(
-                            E_Mostrar_Resultados.this,
-                            "La Imagen tomada no se pudo cargar al servidor",
-                            Toast.LENGTH_LONG
-                    ).show();
-                    return;
-                }
-                Toast.makeText(
-                        E_Mostrar_Resultados.this,
-                        "Imagen cargada al servidor exitosamente",
-                        Toast.LENGTH_LONG
-                ).show();
-            }
 
-            @Override
-            public void onFailure(Call<ResponseBody> call, Throwable t) {
-
-            }
-        });*/
     }
     public void Cambiar_Tema(){
         if (Obtener_Modo_Visualizacion()) getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_YES);
