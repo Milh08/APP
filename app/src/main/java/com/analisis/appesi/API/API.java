@@ -41,7 +41,7 @@ public interface API {
             @Field("latitud") String latitud,
             @Field("longitud") String longitud,
             @Field("lote_id") int lote_id,
-            @Field("produndidad") int profundidad,
+            @Field("profundidad") int profundidad,
             @Field("user_id") int user_id
     );
 

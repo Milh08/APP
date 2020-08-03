@@ -104,11 +104,12 @@ public class C_Localizacion extends AppCompatActivity {
                     ).show();
                     return;
                 }
-                Toast.makeText(
-                        C_Localizacion.this,
-                        "Ubicacion Almacenada",
-                        Toast.LENGTH_SHORT
-                ).show();
+                if(response.isSuccessful())
+                    Toast.makeText(
+                            C_Localizacion.this,
+                            "Ubicacion Almacenada",
+                            Toast.LENGTH_SHORT
+                    ).show();
             }
 
             @Override
