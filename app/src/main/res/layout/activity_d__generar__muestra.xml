@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mainbackground"
+    tools:context=".Actividades.D_Generar_Muestra">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/UbicacionTerreno"
+            android:textColor="@color/TextoTema"
+            android:textSize="20sp" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/PAIS"
+                    android:textColor="@color/TextoTema"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/ESTADO"
+                    android:textColor="@color/TextoTema"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+            </TableRow>
+            <TableRow>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/a_contorno_verde">
+                    <TextView
+                        android:id="@+id/Pais"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="6dp"
+                        android:drawableStart="@drawable/ic_a_pais"
+                        android:gravity="center"
+                        android:hint="@string/MEXICO"
+                        android:textColor="@color/MuestraTerreno"
+                        android:textSize="18sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/a_contorno_verde">
+                    <TextView
+                        android:id="@+id/Estado"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="6dp"
+                        android:drawableStart="@drawable/ic_a_estado"
+                        android:gravity="center"
+                        android:hint="@string/CDMX"
+                        android:textColor="@color/MuestraTerreno"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/MUNICIPIO"
+                    android:textColor="@color/TextoTema"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+            </TableRow>
+            <TableRow>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/a_contorno_verde"
+                    tools:ignore="UselessParent">
+                    <TextView
+                        android:id="@+id/Municipio"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="6dp"
+                        android:drawableStart="@drawable/ic_a_municipio"
+                        android:gravity="center"
+                        android:hint="@string/BENITO"
+                        android:textColor="@color/MuestraTerreno"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </TableRow>
+            <TableRow android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
+                    android:text="@string/ElegirLote"
+                    android:textColor="@color/TextoTema"
+                    android:textSize="16sp" />
+                <Spinner
+                    android:id="@+id/Localizaciones"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/TextoTema"
+                    android:gravity="center" />
+            </TableRow>
+            <TableRow android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/SeleccionarLote"
+                    android:textColor="@color/TextoTema"
+                    android:textSize="16sp" />
+                <Spinner
+                    android:id="@+id/Lista_Muestras"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/TextoTema"
+                    android:gravity="center" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="8dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/InformacionTerreno"
+                    android:textColor="@color/TextoTema"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="8dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/Nombre"
+                    android:textColor="@color/TextoTema"
+                    android:textSize="12sp"/>
+                <TextView
+                    android:id="@+id/Nombre_Lote"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/Azul"
+                    android:textStyle="bold|italic"
+                    android:textSize="12sp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/N_Muestra"
+                    android:textColor="@color/TextoTema"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/id_Muestra"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/Azul"
+                    android:textSize="12sp" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="8dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/Latitud"
+                    android:textColor="@color/TextoTema"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/Latitud_CC"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/Azul"
+                    android:textStyle="bold|italic"
+                    android:textSize="12sp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/Longitud"
+                    android:textColor="@color/TextoTema"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/Longitud_CC"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/Azul"
+                    android:textStyle="bold|italic"
+                    android:textSize="12sp" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="8dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/Profundidad"
+                    android:gravity="center"
+                    android:textColor="@color/TextoTema"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/Profundidad_CC"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/Azul"
+                    android:textStyle="bold|italic"
+                    android:textSize="12sp" />
+            </TableRow>
+            <TableRow android:layout_marginTop="8dp">
+                <Button
+                    android:id="@+id/Camara"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/a_contorno_azul"
+                    android:text="@string/BtnFoto"
+                    android:textColor="@color/Azul"
+                    android:layout_marginEnd="3dp"
+                    tools:ignore="ButtonStyle" />
+                <Button
+                    android:id="@+id/Analizar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/a_contorno_azul"
+                    android:text="@string/BtnAnalizar"
+                    android:textColor="@color/Azul"
+                    android:layout_marginStart="3dp"
+                    android:enabled="false"
+                    tools:ignore="ButtonStyle" />
+            </TableRow>
+        </TableLayout>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/foto_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+</LinearLayout>

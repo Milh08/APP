@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#080808</color> <!-->ABAJO<-->
+    <color name="colorPrimaryDark">#121212</color> <!-->#ARRIBA<-->
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="mainbackground">#121212</color> <!-->#121212<-->
+    <color name="TextoTema">#ffffff</color>
+    <color name="Azul">#0052D4</color>
+    <color name="Negro">#121212</color>
+
+    <color name="MuestraTerreno">#00F260</color>
+</resources>

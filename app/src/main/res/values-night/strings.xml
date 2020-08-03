@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">App Esi</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="Tema">Modo Claro</string>
+
+    <string name="Correo">Correo</string>
+    <string name="Contraseña">Contraseña</string>
+    <string name="BtnSesion">Iniciar Sesion</string>
+
+    <string name="CerrarSesion">Cerrar Sesion</string>
+
+    <string name="UbicacionTerreno">Ubicación del terreno</string>
+    <string name="PAIS">Pais</string>
+    <string name="ESTADO">Estado</string>
+    <string name="MUNICIPIO">Municipio</string>
+    <string name="MEXICO">México</string>
+    <string name="CDMX">CDMX</string>
+    <string name="BENITO">Benito Juarez</string>
+    <string name="ElegirLote">Elegir Lote</string>
+    <string name="SeleccionarLote">Seleccionar Muestra</string>
+    <string name="InformacionTerreno">Información del terreno</string>
+    <string name="Nombre">Nombre</string>
+    <string name="N_Muestra">N° Muestra</string>
+    <string name="Latitud">Latitud</string>
+    <string name="Longitud">Longitud</string>
+    <string name="Profundidad">Profundidad</string>
+    <string name="BtnFoto">Tomar Fotografia</string>
+    <string name="BtnAnalizar">Analizar</string>
+
+    <string name="Presencia">Presencia</string>
+    <string name="Oxígeno">Indentificación\nde Oxígeno</string>
+    <string name="Materia_orgánica">Indentificación de \nMateria orgánica</string>
+    <string name="Minerales">Indentificación\nde Minerales</string>
+    <string name="Nitrógeno">Indentificación\nde Nitrógeno</string>
+    <string name="Rompimiento">Indentificación\nde Rompimiento</string>
+    <string name="Materia_Viva">Indentificación de \nMateria Viva</string>
+    <string name="Actividad_Biológica">Indentificación de \nActividad Biológica</string>
+    <string name="Nitrógeno_Orgánico">Indentificación de \n Nitrógeno Orgánico</string>
+
+</resources>
