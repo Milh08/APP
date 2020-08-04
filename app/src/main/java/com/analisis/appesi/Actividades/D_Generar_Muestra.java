@@ -148,6 +148,7 @@ public class D_Generar_Muestra extends AppCompatActivity {
     }
     private void Tomar_Fotografia_Intent(){
         Intent Tomar_Foto = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        Tomar_Foto.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 
         if (Tomar_Foto.resolveActivity(getPackageManager()) != null){
             try{

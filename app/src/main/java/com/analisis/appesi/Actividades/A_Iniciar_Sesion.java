@@ -321,6 +321,7 @@ public class A_Iniciar_Sesion extends AppCompatActivity {
     }
     public void Abrir_Ventana_Menu(){
         Intent pantalla_Menu =new Intent(this, B_Menu.class);
+        pantalla_Menu.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(pantalla_Menu);
     }
 }

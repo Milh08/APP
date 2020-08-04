@@ -80,6 +80,7 @@ public class B_Menu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Volver_A_Login();
+                finish();
             }
         });
     }
@@ -194,10 +195,12 @@ public class B_Menu extends AppCompatActivity {
     }
     public void abrir_ventana_Localizacion(){
         Intent ventana_Localizacion = new Intent(this, C_Localizacion.class);
+        ventana_Localizacion.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(ventana_Localizacion);
     }
     public void abrir_ventana_muestra(){
         Intent ventana_muestra = new Intent(this, D_Generar_Muestra.class);
+        ventana_muestra.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(ventana_muestra);
     }
 }
