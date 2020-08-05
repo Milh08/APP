@@ -15,7 +15,11 @@
     <string name="Contraseña">Contraseña</string>
     <string name="BtnSesion">Iniciar Sesion</string>
 
-    <string name="CerrarSesion">Cerrar Sesion</string>
+    <string name="CerrarSesion">Cerrar sesion</string>
+    <string name="CrearMuestra">Crear\nmuestra</string>
+    <string name="GuardarUbicacion">Guardar\nubicación</string>
+
+    <string name="BotonUbicacion">Guardar ubicación actual</string>
 
     <string name="UbicacionTerreno">Ubicación del terreno</string>
     <string name="PAIS">Pais</string>
@@ -24,25 +28,25 @@
     <string name="MEXICO">México</string>
     <string name="CDMX">CDMX</string>
     <string name="BENITO">Benito Juarez</string>
-    <string name="ElegirLote">Elegir Lote</string>
-    <string name="SeleccionarLote">Seleccionar Muestra</string>
+    <string name="ElegirLote">Elegir lote</string>
+    <string name="SeleccionarLote">Seleccionar muestra</string>
     <string name="InformacionTerreno">Información del terreno</string>
     <string name="Nombre">Nombre</string>
     <string name="N_Muestra">N° Muestra</string>
     <string name="Latitud">Latitud</string>
     <string name="Longitud">Longitud</string>
     <string name="Profundidad">Profundidad</string>
-    <string name="BtnFoto">Tomar Fotografia</string>
+    <string name="BtnFoto">Tomar fotografia</string>
     <string name="BtnAnalizar">Analizar</string>
 
     <string name="Presencia">Presencia</string>
-    <string name="Oxígeno">Indentificación\nde Oxígeno</string>
-    <string name="Materia_orgánica">Indentificación de \nMateria orgánica</string>
-    <string name="Minerales">Indentificación\nde Minerales</string>
-    <string name="Nitrógeno">Indentificación\nde Nitrógeno</string>
-    <string name="Rompimiento">Indentificación\nde Rompimiento</string>
-    <string name="Materia_Viva">Indentificación de \nMateria Viva</string>
-    <string name="Actividad_Biológica">Indentificación de \nActividad Biológica</string>
-    <string name="Nitrógeno_Orgánico">Indentificación de \n Nitrógeno Orgánico</string>
+    <string name="Oxígeno">Identificación\nde oxígeno</string>
+    <string name="Materia_orgánica">Identificación de \nmateria orgánica</string>
+    <string name="Minerales">Identificación\nde minerales</string>
+    <string name="Nitrógeno">Identificación\nde nitrógeno</string>
+    <string name="Rompimiento">Identificación\nde rompimiento</string>
+    <string name="Materia_Viva">Identificación de \nmateria viva</string>
+    <string name="Actividad_Biológica">Identificación de \nactividad biológica</string>
+    <string name="Nitrógeno_Orgánico">Identificación de \n nitrógeno orgánico</string>
 
 </resources>

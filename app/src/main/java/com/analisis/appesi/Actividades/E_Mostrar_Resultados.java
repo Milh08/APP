@@ -44,7 +44,7 @@ public class E_Mostrar_Resultados extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_e__mostrar__resultados);
-        getSupportActionBar().setTitle("Resultados del Análisis");
+        getSupportActionBar().setTitle("Resultados del análisis");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Croma_Img      = findViewById(R.id.Croma_Img);

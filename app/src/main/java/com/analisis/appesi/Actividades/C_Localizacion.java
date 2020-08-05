@@ -58,7 +58,7 @@ public class C_Localizacion extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_c__localizacion);
-        getSupportActionBar().setTitle("Guardar Ubicación");
+        getSupportActionBar().setTitle("Guardar ubicación");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Cambiar_Tema();

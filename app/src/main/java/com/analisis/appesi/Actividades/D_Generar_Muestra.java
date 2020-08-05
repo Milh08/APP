@@ -69,7 +69,7 @@ public class D_Generar_Muestra extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_d__generar__muestra);
-        getSupportActionBar().setTitle("Crear Nueva Muestra");
+        getSupportActionBar().setTitle("Crear nueva muestra");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Pais           = findViewById(R.id.Pais);

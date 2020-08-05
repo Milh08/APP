@@ -86,7 +86,7 @@
                 android:gravity="center"
                 android:textColor="#ffffff"
                 android:textSize="20sp"
-                android:text="Guardar Ubicación Actual"/>
+                android:text="@string/BotonUbicacion"/>
         </androidx.cardview.widget.CardView>
     </LinearLayout>
 </LinearLayout>
